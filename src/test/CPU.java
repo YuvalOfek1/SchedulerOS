@@ -1,8 +1,14 @@
 package test;
 
-public class CPU {
+import java.util.ArrayList;
+import java.util.List;
 
-    public void run(Scheduler scheduler, ProcessClass[] processes) {
-        scheduler.schedule(processes);
+public class CPU {
+    List<ProcessClass> processes;
+    public void run(Scheduler scheduler) {
+        scheduler.schedule(this.processes);
+    }
+    public CPU(ProcessClass[] processes){
+        this.processes = new ArrayList<>(List.of(processes));
     }
 }

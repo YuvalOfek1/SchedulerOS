@@ -1,5 +1,8 @@
 package test;
 
+import java.util.List;
+
 public interface Scheduler {
-    public void schedule(ProcessClass[] processes);
+    public void schedule(List<ProcessClass> processes);
+
 }
