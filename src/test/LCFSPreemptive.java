@@ -1,5 +1,6 @@
 package test;
 
+import java.util.List;
 import java.util.Stack;
 
 public class LCFSPreemptive extends LCFS implements Scheduler {
@@ -9,8 +10,8 @@ public class LCFSPreemptive extends LCFS implements Scheduler {
     }
 
     @Override
-    public void schedule(Process[] processes) {
-        System.out.println("test.LIFO Preemptive scheduling algorithm");
+    public void schedule(List<ProcessClass> processes) {
+
     }
 }
 

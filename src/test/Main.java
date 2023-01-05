@@ -1,8 +1,34 @@
 package test;
 
+import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.stream.Stream;
+
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("Hello world!");
+        try {
+            Scanner scan = new Scanner(new BufferedReader(new FileReader("src/test/input1.txt")));
+            ArrayList<ProcessClass> al = new ArrayList<>();
+
+            int numOfProcesses = Integer.parseInt(scan.nextLine());
+            for(int i=0;i<numOfProcesses;i++){
+                String line = scan.nextLine();
+                String[] processData = line.split(",");
+                ProcessClass pc = new ProcessClass(Integer.parseInt(processData[0]), Integer.parseInt(processData[1]));
+                al.add(pc);
+            }
+            RoundRobin rr = new RoundRobin(2);
+            rr.schedule(al);
+
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+
+
+
     }
 }

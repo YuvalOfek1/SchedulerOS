@@ -3,8 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="0a9b01d9-1bab-4daa-82f6-a51886df79d5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/AbstractScheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/AbstractScheduler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Scheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Scheduler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/LCFSNonPreemptive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/LCFSNonPreemptive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/LCFSPreemptive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/LCFSPreemptive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/ProcessClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/ProcessClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/RoundRobin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/RoundRobin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/SJF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/SJF.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +59,7 @@
       <updated>1672862109476</updated>
       <workItem from="1672862111016" duration="1043000" />
       <workItem from="1672863261787" duration="726000" />
-      <workItem from="1672919611519" duration="1368000" />
+      <workItem from="1672919611519" duration="5478000" />
     </task>
     <servers />
   </component>
@@ -72,5 +76,27 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/RoundRobin.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/RoundRobin.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="pc" language="JAVA" />
+        <watch expression="currentTime" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
