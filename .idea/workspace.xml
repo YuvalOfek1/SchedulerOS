@@ -1,11 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a9b01d9-1bab-4daa-82f6-a51886df79d5" name="Changes" comment="" />
+    <list default="true" id="0a9b01d9-1bab-4daa-82f6-a51886df79d5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SchedulerOS.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/AbstractScheduler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/CPU.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/FCFS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/LCFS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/LCFSNonPreemptive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/LCFSPreemptive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/Process.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/RoundRobin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/SJF.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/Scheduler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/input1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/input2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/input3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/input4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/input5.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2JsLze0Re3PZ8fvtBUiVWhHt9HG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -17,9 +55,15 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Yuval\OneDrive - cs.colman.ac.il\Desktop\אקדמיה\B.sc CS COLMAN\שנה ב\מערכות הפעלה\SchedulerOS\src\test" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -28,8 +72,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672862109476</updated>
+      <workItem from="1672862111016" duration="1043000" />
+      <workItem from="1672863261787" duration="726000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

@@ -1,3 +1,5 @@
+package test;
+
 public class RoundRobin extends AbstractScheduler implements Scheduler {
 
     private int timeQuantum;
@@ -7,7 +9,7 @@ public class RoundRobin extends AbstractScheduler implements Scheduler {
     }
 
     @Override
-    public void schedule(Process[] processes) {
+    public void schedule(ProcessClass[] processes) {
         System.out.println("Round Robin scheduling algorithm");
 
     }

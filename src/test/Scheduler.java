@@ -1,3 +1,5 @@
+package test;
+
 public interface Scheduler {
-    public void schedule(Process[] processes);
+    public void schedule(ProcessClass[] processes);
 }

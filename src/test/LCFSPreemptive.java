@@ -2,8 +2,8 @@ package test;
 
 import java.util.Stack;
 
-public class LifoPreemptive extends LIFO implements Scheduler {
-    public LifoPreemptive() {
+public class LCFSPreemptive extends LCFS implements Scheduler {
+    public LCFSPreemptive() {
         super.setCurrentTime(0);
         super.setStack(new Stack<Process>());
     }
