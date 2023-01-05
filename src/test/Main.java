@@ -25,6 +25,10 @@ public class Main {
             cpu.run(new RoundRobin(2));
             cpu.setProcesses(al);
             cpu.run(new FCFS());
+            cpu.setProcesses(al);
+            cpu.run(new LCFSNonPreemptive());
+            cpu.setProcesses(al);
+            cpu.run(new LCFSPreemptive());
 
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
