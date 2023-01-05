@@ -21,8 +21,10 @@ public class Main {
                 ProcessClass pc = new ProcessClass(Integer.parseInt(processData[0]), Integer.parseInt(processData[1]));
                 al.add(pc);
             }
-            RoundRobin rr = new RoundRobin(2);
-            rr.schedule(al);
+            CPU cpu = new CPU(al);
+            cpu.run(new RoundRobin(2));
+            cpu.setProcesses(al);
+            cpu.run(new FCFS());
 
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
