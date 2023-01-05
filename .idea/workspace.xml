@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0a9b01d9-1bab-4daa-82f6-a51886df79d5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/LCFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/LCFS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/LCFSNonPreemptive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/LCFSNonPreemptive.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/LCFSPreemptive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/LCFSPreemptive.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/SJF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/SJF.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +55,7 @@
       <updated>1672862109476</updated>
       <workItem from="1672862111016" duration="1043000" />
       <workItem from="1672863261787" duration="726000" />
-      <workItem from="1672919611519" duration="10182000" />
+      <workItem from="1672919611519" duration="11121000" />
     </task>
     <servers />
   </component>
@@ -85,7 +83,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/Main.java</url>
-          <line>30</line>
+          <line>31</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>

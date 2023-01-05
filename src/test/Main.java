@@ -21,6 +21,7 @@ public class Main {
                 ProcessClass pc = new ProcessClass(Integer.parseInt(processData[0]), Integer.parseInt(processData[1]));
                 al.add(pc);
             }
+            System.out.println("<------Input1.txt-------->");
             CPU cpu = new CPU(al);
             cpu.run(new RoundRobin(2));
             cpu.setProcesses(al);
