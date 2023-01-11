@@ -16,6 +16,10 @@ public class FCFS extends AbstractScheduler implements Scheduler {
         sortedProcesses.sort((p1, p2) -> p1.getArrivalTime()-p2.getArrivalTime());
         setCurrentTime(sortedProcesses.get(0).getArrivalTime());
         for(ProcessClass pc : sortedProcesses){
+            //added///////////////////////////////////
+            if(pc.getArrivalTime()>getCurrentTime())
+                setCurrentTime(pc.getArrivalTime());
+            //////////////////////////////////////////
             setCurrentTime(getCurrentTime()+pc.getNeededTime());
             totalTurnAround+=getCurrentTime()- pc.getArrivalTime();
         }

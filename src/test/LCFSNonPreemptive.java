@@ -18,15 +18,23 @@ public class LCFSNonPreemptive extends LCFS implements Scheduler {
         setCurrentTime(sortedProcesses.get(0).getArrivalTime());
         while(terminatedProcessesIDS.size()<sortedProcesses.size()){
             for(ProcessClass p : sortedProcesses){
+                if(p.isTerminated()) {
+                    terminatedProcessesIDS.add(p.getId());
+                    continue;
+                }
                 if(p.getArrivalTime()<=getCurrentTime() && !p.isTerminated()){
                     super.addToStack(p);
                 }
             }
-            ProcessClass p = super.stack.pop();
-            setCurrentTime(getCurrentTime()+p.getNeededTime());
-            p.setNeededTime(0);
-            totalTurnAround+=getCurrentTime()-p.getArrivalTime();
-            terminatedProcessesIDS.add(p.getId());
+            if(stack.size()>0) { //added
+                ProcessClass p = super.stack.pop();
+                setCurrentTime(getCurrentTime() + p.getNeededTime());
+                p.setNeededTime(0);
+                totalTurnAround += getCurrentTime() - p.getArrivalTime();
+                terminatedProcessesIDS.add(p.getId());
+            }
+            else setCurrentTime(getCurrentTime()+1); //added
+
 
         }
         System.out.println("LCFS Non-Preemtive: " + totalTurnAround/sortedProcesses.size());

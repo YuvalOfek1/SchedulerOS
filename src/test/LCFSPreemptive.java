@@ -18,26 +18,35 @@ public class LCFSPreemptive extends LCFS implements Scheduler {
         while(terminatedProcessesIDS.size()<sortedProcesses.size()){
 
             if(sortedProcesses.size()>lastProcess) {
-                if(!sortedProcesses.get(lastProcess).isTerminated() && sortedProcesses.get(lastProcess).getArrivalTime()<=getCurrentTime()) {
+                if(sortedProcesses.get(lastProcess).isTerminated()) {
+                    terminatedProcessesIDS.add(sortedProcesses.get(lastProcess).getId());
+                    lastProcess++;
+                }
+                else if(sortedProcesses.get(lastProcess).getArrivalTime()<=getCurrentTime()) {
 
                     super.addToStack(sortedProcesses.get(lastProcess));
                     lastProcess++;
+
                 }
             }
-            ProcessClass p = stack.pop();
-            int tempTime = getCurrentTime()+p.getNeededTime();
-            if(lastProcess == sortedProcesses.size()){
-                setCurrentTime(getCurrentTime()+p.getNeededTime());
-                p.setNeededTime(0);
-                totalTurnAround+=getCurrentTime()-p.getArrivalTime();
-                terminatedProcessesIDS.add(p.getId());
+            if(stack.size()>0){
+                ProcessClass p = stack.pop();
+                int tempTime = getCurrentTime() + p.getNeededTime();
+                if (lastProcess == sortedProcesses.size() || (sortedProcesses.get(lastProcess).getArrivalTime()>=getCurrentTime()+p.getNeededTime())) {
+                    setCurrentTime(getCurrentTime() + p.getNeededTime());
+                    p.setNeededTime(0);
+                    totalTurnAround += getCurrentTime() - p.getArrivalTime();
+                    terminatedProcessesIDS.add(p.getId());
+                }
+                else if (sortedProcesses.get(lastProcess).getArrivalTime() <= tempTime && !sortedProcesses.get(lastProcess).isTerminated()) {
+                    int toReduce = sortedProcesses.get(lastProcess).getArrivalTime() - getCurrentTime();
+                    p.setNeededTime(p.getNeededTime() - toReduce);
+                    setCurrentTime(getCurrentTime() + toReduce);
+                    stack.add(p);
+                }
             }
-            else if(sortedProcesses.get(lastProcess).getArrivalTime() <= tempTime && !sortedProcesses.get(lastProcess).isTerminated()){
-                int toReduce = sortedProcesses.get(lastProcess).getArrivalTime()-getCurrentTime();
-                p.setNeededTime(p.getNeededTime()-toReduce);
-                setCurrentTime(getCurrentTime()+toReduce);
-                stack.add(p);
-            }
+            else setCurrentTime(getCurrentTime()+1);
+
 
         }
 

@@ -11,7 +11,7 @@ public class Main {
     public static void main(String[] args) {
 
         try {
-            Scanner scan = new Scanner(new BufferedReader(new FileReader("src/test/input1.txt")));
+            Scanner scan = new Scanner(new BufferedReader(new FileReader("src/test/input5.txt")));
             ArrayList<ProcessClass> al = new ArrayList<>();
 
             int numOfProcesses = Integer.parseInt(scan.nextLine());
@@ -30,6 +30,7 @@ public class Main {
             cpu.run(new LCFSNonPreemptive());
             cpu.setProcesses(al);
             cpu.run(new LCFSPreemptive());
+            scan.close();
 
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
