@@ -6,10 +6,12 @@ public class ProcessClass {
     private int id;
     private int arrivalTime;
     private int neededTime;
+    final private int initNeeded;
 
     public ProcessClass(int arrivalTime, int burstTime) {
         this.id = processCounter++;
         this.arrivalTime = arrivalTime;
+        this.initNeeded = burstTime;
         this.neededTime = burstTime;
     }
 
@@ -39,6 +41,10 @@ public class ProcessClass {
 
     public void setNeededTime(int neededTime) {
         this.neededTime = neededTime;
+    }
+
+    public int getInitNeeded() {
+        return this.initNeeded;
     }
 
 }
