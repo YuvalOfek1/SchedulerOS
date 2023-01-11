@@ -43,11 +43,12 @@ public class SJF extends AbstractScheduler implements Scheduler {
                 }else {
                     ProcessClass lastProcess = pq.poll();
                     totalTurnAround += getCurrentTime() + lastProcess.getNeededTime() - lastProcess.getArrivalTime();
+                    setCurrentTime(getCurrentTime() + lastProcess.getNeededTime());
                     lastProcess.setNeededTime(0);
                     terminatedProcessesIDS.add(lastProcess.getId());
-                    pq.add(sortedProcesses.get(currentProcessIndex));
-                    currentProcessIndex++;
-                    setCurrentTime(tempCurrentTime);
+//                    pq.add(sortedProcesses.get(currentProcessIndex));
+//                    currentProcessIndex++;
+//                    setCurrentTime(tempCurrentTime);
                 }
 
 
