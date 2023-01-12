@@ -9,7 +9,7 @@ import java.util.stream.Stream;
 
 public class Main {
     public static void main(String[] args) {
-
+        ProcessClass.resetProcessCounter();
         try {
             Scanner scan = new Scanner(new BufferedReader(new FileReader("src/test/input2.txt")));
             ArrayList<ProcessClass> al = new ArrayList<>();

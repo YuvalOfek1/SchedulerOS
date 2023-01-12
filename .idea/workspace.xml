@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a9b01d9-1bab-4daa-82f6-a51886df79d5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
-    <list id="56cdd89a-b889-49d9-a5e8-6cd8e87ad1b4" name="Changes by talmekler" comment="">
+      <change beforePath="$PROJECT_DIR$/src/test/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/ProcessClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/ProcessClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/SJF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/SJF.java" afterDir="false" />
     </list>
+    <list id="56cdd89a-b889-49d9-a5e8-6cd8e87ad1b4" name="Changes by talmekler" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,6 +40,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/talmekler/Desktop/SchedulerOS&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
@@ -67,6 +70,8 @@
       <workItem from="1673438927290" duration="66000" />
       <workItem from="1673439011003" duration="30000" />
       <workItem from="1673439062292" duration="6981000" />
+      <workItem from="1673446481852" duration="2781000" />
+      <workItem from="1673521830336" duration="442000" />
     </task>
     <servers />
   </component>
@@ -88,16 +93,16 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/Main.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="19" />
+          <url>file://$PROJECT_DIR$/src/test/SJF.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
-        <watch expression="pc" language="JAVA" />
         <watch expression="currentTime" language="JAVA" />
+        <watch expression="currentProcessIndex" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
