@@ -11,7 +11,7 @@ public class Main {
     public static void main(String[] args) {
 
         try {
-            Scanner scan = new Scanner(new BufferedReader(new FileReader("src/test/input2.txt")));
+            Scanner scan = new Scanner(new BufferedReader(new FileReader("src/test/input3.txt")));
             ArrayList<ProcessClass> al = new ArrayList<>();
 
             int numOfProcesses = Integer.parseInt(scan.nextLine());
@@ -23,13 +23,13 @@ public class Main {
             }
             System.out.println("<------Input1.txt-------->");
             CPU cpu = new CPU(al);
-            cpu.run(new RoundRobin(2));
-            cpu.setProcesses(al);
             cpu.run(new FCFS());
             cpu.setProcesses(al);
             cpu.run(new LCFSNonPreemptive());
             cpu.setProcesses(al);
             cpu.run(new LCFSPreemptive());
+            cpu.setProcesses(al);
+            cpu.run(new RoundRobin(2));
             cpu.setProcesses(al);
             cpu.run(new SJF());
             scan.close();

@@ -46,9 +46,9 @@ public class SJF extends AbstractScheduler implements Scheduler {
                     setCurrentTime(getCurrentTime() + lastProcess.getNeededTime());
                     lastProcess.setNeededTime(0);
                     terminatedProcessesIDS.add(lastProcess.getId());
-//                    pq.add(sortedProcesses.get(currentProcessIndex));
-//                    currentProcessIndex++;
-//                    setCurrentTime(tempCurrentTime);
+                    /*pq.add(sortedProcesses.get(currentProcessIndex));
+                    currentProcessIndex++;
+                    setCurrentTime((tempCurrentTime));*/
                 }
 
 

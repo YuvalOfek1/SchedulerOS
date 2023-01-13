@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0a9b01d9-1bab-4daa-82f6-a51886df79d5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
-    <list id="56cdd89a-b889-49d9-a5e8-6cd8e87ad1b4" name="Changes by talmekler" comment="">
+      <change beforePath="$PROJECT_DIR$/src/test/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/SJF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/SJF.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +65,7 @@
       <workItem from="1673429066107" duration="1461000" />
       <workItem from="1673438927290" duration="66000" />
       <workItem from="1673439011003" duration="30000" />
-      <workItem from="1673439062292" duration="6981000" />
+      <workItem from="1673439062292" duration="7601000" />
     </task>
     <servers />
   </component>
@@ -89,7 +88,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/Main.java</url>
-          <line>31</line>
+          <line>29</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
