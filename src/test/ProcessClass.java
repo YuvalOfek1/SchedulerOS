@@ -15,6 +15,10 @@ public class ProcessClass {
         this.neededTime = burstTime;
     }
 
+    public static void resetProcessCounter() {
+        processCounter = 0;
+    }
+
     public boolean isTerminated(){
         return neededTime==0;
     }

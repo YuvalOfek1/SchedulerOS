@@ -43,12 +43,46 @@ public class SJF extends AbstractScheduler implements Scheduler {
                 }else {
                     ProcessClass lastProcess = pq.poll();
                     totalTurnAround += getCurrentTime() + lastProcess.getNeededTime() - lastProcess.getArrivalTime();
+                    // change passed time (passed + last.neededTime)
+                    timePassed -= lastProcess.getNeededTime();
+
                     setCurrentTime(getCurrentTime() + lastProcess.getNeededTime());
                     lastProcess.setNeededTime(0);
                     terminatedProcessesIDS.add(lastProcess.getId());
-                    /*pq.add(sortedProcesses.get(currentProcessIndex));
+
+                    while(!pq.isEmpty() && timePassed > 0) {
+                        lastProcess = pq.poll();
+                        if(lastProcess.getNeededTime() <= timePassed) {
+                            timePassed -= lastProcess.getNeededTime();
+                            setCurrentTime(getCurrentTime() + lastProcess.getNeededTime());
+                            lastProcess.setNeededTime(0);
+                            terminatedProcessesIDS.add(lastProcess.getId());
+                        }else {
+                            lastProcess.setNeededTime(lastProcess.getNeededTime() - timePassed);
+                            pq.add(lastProcess);
+                            timePassed = 0;
+                        }
+                    }
+
+                    /*
+                     * while(passed > 0 && !PQ.isempty) {
+                     *
+                     *   last = pq.poll
+                     *   if(last.needed <= passed)
+                     *   {
+                     *       passed -= last.needed
+                     *       currentTime += needed
+                     *       last.needed = 0
+                     *       TERMINATED.add (last)
+                     *   }
+                     *
+                     * }
+                     * */
+
+
+                    pq.add(sortedProcesses.get(currentProcessIndex));
                     currentProcessIndex++;
-                    setCurrentTime((tempCurrentTime));*/
+                    setCurrentTime(tempCurrentTime);
                 }
 
 
